@@ -1,0 +1,45 @@
+/* 기본 셋팅 값 : reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: lightpink;
+}
+
+#header {
+    background-color: lightblue;
+}
+#header #logo a {
+    color: red;
+}
+
+#gnb > ul > li {
+    border: 1px solid green;
+}
+
+.main-intro {
+    border: 1px solid red;
+}
+
+.bg-grey {
+    background-color: #f0f0f0;
+}
+
+
+
+.corp-area .list-corp li:first-child{
+    border: 1px solid yellow;
+
+}
+.corp-area .list-corp li:nth-child(3){
+    border: 1px solid blue;
+
+}
+.corp-area .list-corp li:nth-last-child(3){
+    border: 1px solid blueviolet;
+}
+.corp-area .list-corp li:last-child{
+    border: 1px solid orange;
+}
