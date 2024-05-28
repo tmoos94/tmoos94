@@ -35,7 +35,7 @@ nav a {
 .hero {
     text-align: center;
     padding: 4rem 1rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('cafe-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('cafe-background.jpg');
     
     background-size: cover;
     background-position: center;
