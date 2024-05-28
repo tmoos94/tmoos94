@@ -1,3 +1,7 @@
+
+
+/* 여기부터새로 */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +20,12 @@
 }
 
 header {
+    position: relative;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     height: 100px;
-    background: lightgray;
+    /* background: lightgray; */
 }
 header h1 {
     display: flex;
@@ -28,25 +34,155 @@ header h1 a {
     display: flex;
     align-items: center;
 }
-header nav {
+#gnb {
     display: flex;
     align-items: center;
 }
-/* slide */
-.slide{
-    height: 300px;
+#gnb .depth1 {
+    display: flex;
 }
-.slide ul li {
+#gnb .depth1 > li {
+    position: relative;
+}
+#gnb .depth1 > li > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+}
+#gnb .depth1 > li:hover > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
     width: 100%;
-    border: 1px solid blue;
+    height: 2px;
+    background: red;
+}
+#gnb .depth1 > li:hover > a {
+    color: red;
+    font-weight: bold;
+    /* border-bottom: 2px solid red; */
+}
+/* 모든 메뉴 다 보이게... */
+/* #gnb .depth1:hover > li .depth2 { */
+/* li 각각에 보이게... */
+#gnb .depth1 > li:hover .depth2 {
+    display: block;
+}
+#gnb .depth2 {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+#gnb .depth2 li a {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: center;
+}
+#gnb .depth2 li a:hover {
+    color: red;
+}
+
+/* slide */
+.slide {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    background: lightblue;
 }
 .slide ul {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     width: 300%;
 }
+.slide ul li {
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+}
 
 /* contents */
-/* 실무에서 클래스이름 무조건. 이렇게 쓰면 안됨 */
-section{
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+main section {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; */
+    flex: 1 1 0;
+    /* width: 32%; */
+    height: 300px;
     border: 1px solid red;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+footer div {
+    width: 15%;
+    height: 100px;
+}
+footer .copyright {
+    width: 60%;
+}
+
+#layerPop {
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* fix도 기준 될 수 있음 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%;
+    height: 100%; */
+    background: rgba(0, 0, 0, 0.5);
+    /* background: #000;
+    opacity: 0.5; */
+}
+#layerPop .layer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: -150px 0 0 -250px; */
+    width: 500px;
+    height: 300px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+}
+#layerPop .layer h2 {
+    text-align: center;
+}
+#layerPop .layer p {
+    overflow: auto;
+    flex: 1;
+    max-height: 110px;
+}
+#layerPop .layer button {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
