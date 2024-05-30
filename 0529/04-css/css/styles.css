@@ -1,0 +1,45 @@
+/* 기본 셋팅 값 : reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: lightpink;
+}
+
+#header {
+    /* background-color: #add8e6; */
+    background-color: rgba(173, 216, 230, 0.5);
+}
+#header #logo a {
+    color: red;
+}
+#header #logo a::before {
+    content: '\f578';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+#gnb > ul > li {
+    border: 1px solid green;
+}
+
+.depth1 > li > a::before {
+    content: '\f101';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+.depth2 {
+    display: none;
+}
+.main-intro {
+    border: 1px solid red;
+}
+
+.bg-grey {
+    background-color: #f0f0f0;
+}
