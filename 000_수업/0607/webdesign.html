@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style_web.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="./js/script.js"></script>
+        <script src="./js/comm.js"></script>
+        <!-- defer 하단의 html 코드를 먼저 읽고 스크립트 적용 -->
+    </head>
+    <body>
+        <!-- 가로 1200px, 가운데 정렬 -->
+        <div id="wrap" class="wrap">
+            <!-- header -->
+            <header>
+                <h1 id="logo">
+                    <a href="#">
+                        logo
+                        <span>- sublogo</span>
+                    </a>
+                </h1>
+                <nav id="gnb">
+                    <!-- <button class="btn-menu">
+                        <i class="las la-bars"></i>
+                        <span>전체메뉴 보기</span>
+                    </button> -->
+                    <input type="checkbox" name="btnMenu" id="btnMenu" class="btn-menu" />
+                    <label for="btnMenu" class="label-menu">
+                        <span>전체메뉴 보기</span>
+                    </label>
+                    <ul class="depth1 navbar">
+                        <!-- 메뉴 활성화 : .active 추가 -->
+                        <li class="active">
+                            <a href="#business">business</a>
+                            <ul class="depth2">
+                                <li><a href="#">서브메뉴1</a></li>
+                                <li><a href="#">서브메뉴2</a></li>
+                                <li><a href="#">서브메뉴3</a></li>
+                                <li><a href="#">서브메뉴4</a></li>
+                                <li><a href="#">서브메뉴5</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#news">news</a>
+                            <ul class="depth2">
+                                <li><a href="#">서브메뉴1</a></li>
+                                <li><a href="#">서브메뉴2</a></li>
+                                <li><a href="#">서브메뉴3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#bbs">bbs</a>
+                            <ul class="depth2">
+                                <li><a href="#">서브메뉴1</a></li>
+                                <li><a href="#">서브메뉴2</a></li>
+                                <li><a href="#">서브메뉴3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴4</a>
+                            <ul class="depth2">
+                                <li><a href="#">서브메뉴1</a></li>
+                                <li><a href="#">서브메뉴2</a></li>
+                                <li><a href="#">서브메뉴3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- slide -->
+            <div class="swiper slide-intro">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide">
+                        <video src="./images/newjeans.mp4" muted></video>
+                        <div class="slide-txt">
+                            <strong
+                                >Lorem ipsum dolor sit, <br />
+                                amet consectetur.</strong
+                            >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis rem cupiditate.
+                                Corrupti earum dolorum accusantium necessitatibus magni itaque illo.
+                            </p>
+                            <a href="#">more</a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1716677951293-853a3948f633?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                        <div class="slide-txt">
+                            <strong
+                                >Lorem ipsum dolor sit, <br />
+                                amet consectetur adipisicing elit.</strong
+                            >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis rem cupiditate.
+                                Corrupti earum dolorum accusantium necessitatibus magni itaque illo.
+                            </p>
+                            <a href="#">more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1716792588036-c2834e00afc6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                        <div class="slide-txt">
+                            <strong
+                                >Lorem ipsum dolor sit, <br />
+                                amet consectetur adipisicing elit.</strong
+                            >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis rem cupiditate.
+                                Corrupti earum dolorum accusantium necessitatibus magni itaque illo.
+                            </p>
+                            <a href="#">more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <script></script>
+            <!-- content -->
+            <main>
+                <section id="business" class="sec-g sec-business">
+                    <h2 class="sec-tit"><span>웰컴복지재단</span>의 복지사업</h2>
+                    <div class="sec-cont">
+                        <div class="col-left">
+                            <img src="https://welcomefare.co.kr/images/main/business-slide1-image1.jpg" alt="" />
+                        </div>
+                        <div class="col-right">
+                            <div class="text-wrap">
+                                <h3 class="tit">아동복지사업</h3>
+                                <p class="txt">
+                                    지역아동센터의 원활한 운영을 위해 재단의 예산을 지원하여 건강한 사회 구성원으로
+                                    육성합니다.
+                                </p>
+                            </div>
+
+                            <div class="btn-wrap">
+                                <a class="btn-g btn-arrow" href="#">지역아동센터사업</a>
+                                <a class="btn-g btn-arrow" href="#">우리동네키움센터사업</a>
+                                <a class="btn-g btn-arrow" href="#">어린이집사업</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="banner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                    Quibusdam, doloremque!
+                </div>
+                <section id="news" class="sec-g sec-news">
+                    <h2 class="sec-tit"><span>웰컴</span>뉴스</h2>
+                    <div class="sec-cont">
+                        <ul class="list-news">
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img
+                                            src="https://welcomefare.co.kr/editor/upload/20240529100856464914772.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="txt">
+                                        <strong
+                                            >행복 빨래방의 행복 트럭이 이천시 24시간 아이돌봄 센터에도
+                                            달려갔습니다</strong
+                                        >
+                                        <em>2024.05.29</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img
+                                            src="https://welcomefare.co.kr/editor/upload/20240529100856464914772.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="txt">
+                                        <strong
+                                            >행복 빨래방의 행복 트럭이 이천시 24시간 아이돌봄 센터에도
+                                            달려갔습니다</strong
+                                        >
+                                        <em>2024.05.29</em>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img
+                                            src="https://welcomefare.co.kr/editor/upload/20240529100856464914772.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="txt">
+                                        <strong
+                                            >행복 빨래방의 행복 트럭이 이천시 24시간 아이돌봄 센터에도
+                                            달려갔습니다</strong
+                                        >
+                                        <em>2024.05.29</em>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-g btn-arrow btn-more">더보기</a>
+                    </div>
+                </section>
+                <section id="bbs" style="height: 100vh" class="sec-g sec-bbs bg-grey">
+                    <h2 class="sec-tit"><span>공지</span>사항</h2>
+                    <div class="sec-cont"></div>
+                </section>
+            </main>
+            <!-- footer -->
+            <footer>
+                <div>로고</div>
+                <div class="copyright">copyright</div>
+                <div>
+                    <a href="#wrap">top</a>
+                </div>
+            </footer>
+        </div>
+        <!-- layer -->
+        <div id="layerPop" class="dimmed">
+            <div class="layer">
+                <h2>레이어 타이틀</h2>
+                <p>
+                    레이어 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni tempora sequi
+                    cupiditate, sed tenetur repellendus minima dolorum veniam perspiciatis magnam recusandae libero
+                    quos, quasi ipsa laboriosam animi? Rerum, autem? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolor magni tempora sequi cupiditate, sed Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Cumque, sequi quas temporibus doloremque rerum voluptate possimus similique porro debitis quo
+                    rem esse, quod sunt. Illum a dolorem quia molestias autem.
+                </p>
+                <button>닫기</button>
+            </div>
+        </div>
+    </body>
+</html>
